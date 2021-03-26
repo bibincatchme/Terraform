@@ -5,4 +5,11 @@ terraform apply
 var.subnet_prefix
   cidr block for the subnet
 
-  Enter a value: 10.0.1.0/24
+##  Enter a value: 10.0.1.0/24
+
+
+
+
+# Pass the variable though the command line
+
+##terraform apply -var "subnet_prefix=10.0.100.0/24"

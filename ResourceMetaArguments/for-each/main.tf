@@ -16,3 +16,7 @@ resource "aws_instance" "web" {
 	}
 }
 
+
+output "aws" {
+  value = aws_instance.web["prod"].public_ip
+}

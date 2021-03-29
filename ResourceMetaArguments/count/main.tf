@@ -15,6 +15,11 @@ resource "aws_instance" "web" {
 }
 
 #List of instances IP address.......
-output "instance" {
+output "instance_ip" {
   value = aws_instance.web[*].public_ip
+}
+
+#List using for loop
+output "instance_ips" {
+  value = [for instance in aws_instance.web : instance.public_ip]
 }

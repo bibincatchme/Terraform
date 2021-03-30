@@ -15,7 +15,7 @@ connection {
   type = "ssh"
   host = self.public_ip
   user = "ec2-user"
-  private_key = file("/home/focus/Downloads/william.pem")
+  private_key = file("/home/focus/Downloads/terraform-key.pem")
 # Default timeout is 5 minutes
 timeout     = "4m"
 }

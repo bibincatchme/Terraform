@@ -59,7 +59,9 @@ when = destroy
       "touch /home/ec2-user.new.txt"
 
     }	
-	    
+
+	
+	when = on_failure
 
 */
 		    

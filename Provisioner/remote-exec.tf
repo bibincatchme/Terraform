@@ -35,3 +35,33 @@ resource "aws_instance" "web" {
 		]
 	}
 }
+
+
+/*
+
+provisioner "remote-exec" {
+    connection {
+        type = "ssh"
+        host = "127.0.0.1"
+        user = "ec2-user"
+        private_key = file("/home/focus/Downloads/terraform-key.pem")
+        # Default timeout is 5 minutes
+        timeout     = "4m"
+
+    inline = {
+      "touch /home/ec2-user.new.txt"
+
+    }
+	    
+provisioner "remote-exec" {
+when = destroy
+    inline = {
+      "touch /home/ec2-user.new.txt"
+
+    }	
+	    
+
+*/
+		    
+	    
+	    

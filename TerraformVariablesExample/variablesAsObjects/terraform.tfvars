@@ -7,3 +7,4 @@ vpc_tags = {
 }
 
 
+instance_tags = [1, 2, 3]

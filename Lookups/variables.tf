@@ -1,4 +1,4 @@
-# Ubuntu Precise 12.04 LTS (x64)
+# Ubuntu Precise 12.04 LTS (x64) Mapping is based on the region and AMI assign
 variable "aws_amis" {
   default = {
     eu-west-1 = "ami-674cbc1e"

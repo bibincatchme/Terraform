@@ -36,3 +36,6 @@ terraform apply -var 'key_name=terraform' -var 'public_key_path=/Users/jsmith/.s
 ```
 
 Alternatively to using `-var` with each command, the `terraform.template.tfvars` file can be copied to `terraform.tfvars` and updated.
+
+
+If not specified the var terraform.tfvars file, terrafrom apply will ask for the values from CLI

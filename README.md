@@ -16,3 +16,7 @@ terraform refresh
 ### Terraform output -- It will only apply
   *  terraform plan -out out.terrafrom | changed will saved to the out.terrafrom file
   *  terraform apply out.terrafrom | it will only apply the changed on the out.terrafrom file
+
+
+
+By deafult the terraform variable type will be based on the value you assign to it

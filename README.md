@@ -9,5 +9,10 @@ The terraform refresh command is used to reconcile the state Terraform knows abo
 terraform refresh
 
 ### Terraform Destroy -- Create a plan with an outfile, then apply that planfile
-terraform plan -destroy -out=DESTROYallTerraforms.tfplan 
-terraform apply DESTROYallTerraforms.tfplan 
+  * terraform plan -destroy -out=DESTROYallTerraforms.tfplan 
+  * terraform apply DESTROYallTerraforms.tfplan 
+
+
+### Terraform output -- It will only apply
+  *  terraform plan -out out.terrafrom | changed will saved to the out.terrafrom file
+  *  terraform apply out.terrafrom | it will only apply the changed on the out.terrafrom file
